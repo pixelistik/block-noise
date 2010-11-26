@@ -1,6 +1,6 @@
 #!/bin/bash
 while :
 do
-	cat ../saveme$((RANDOM%10+1)).dv > archivesignal
+	cat ../saveme$((RANDOM%3+1)).dv > archivesignal
 	sleep 1
 done
