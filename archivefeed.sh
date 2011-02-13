@@ -1,6 +1,8 @@
 #!/bin/bash
 while :
 do
-	cat ../saveme/saveme$((RANDOM%5+1)).dv > archivesignal
+	NUMBER=$((RANDOM%7+1))
+	echo "Nächstes Archivvideo: $NUMBER"
+	cat ../saveme/saveme$NUMBER.dv > archivesignal
 	sleep 1
 done
