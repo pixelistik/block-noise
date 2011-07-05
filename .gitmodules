@@ -1,0 +1,3 @@
+[submodule "autodatamosh"]
+	path = autodatamosh
+	url = git://github.com/grampajoe/Autodatamosh.git
