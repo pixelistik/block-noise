@@ -9,7 +9,9 @@ do
 	if [ "$CPUPERCENT" = "0" ]
 	then
 		killall vlc
+		echo "`date` Watchdog: vlc macht nichts mehr, wird neu gestartet">>protokoll.log
 #		echo "VLC neugestartet"
+		sleep 10
 	fi
 	sleep 5
 done
