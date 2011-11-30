@@ -11,7 +11,7 @@ do
 		killall vlc
 		echo "`date` Watchdog: vlc macht nichts mehr, wird neu gestartet">>protokoll.log
 #		echo "VLC neugestartet"
-		sleep 10
+		sleep 30
 	fi
-	sleep 5
+	sleep 10
 done
