@@ -28,3 +28,4 @@ sleep 2
 sleep 8
 ./watchdog.sh &
 #echo $!>/tmp/watchdog.pid
+./savedog.sh &
