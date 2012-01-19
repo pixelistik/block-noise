@@ -3,6 +3,6 @@
 mkdir -p ../saveme/keep
 while :
 do
-	cp ../saveme/saveme1.dv ../saveme/keep/keep`date`.dv
+	cp "../saveme/saveme1.dv" "../saveme/keep/`date`.dv"
 	sleep 300
 done
