@@ -19,10 +19,10 @@ the shell scripts that create the live effect.
  - `dvgrab`
  - `ffmpeg`
  - `vlc`
- - [`autodatamosh.pl` by Joe Friedl](https://github.com/grampajoe/Autodatamosh),included as a git submodule
+ - [`autodatamosh.pl` by Joe Friedl](https://github.com/grampajoe/Autodatamosh) (included as a git submodule)
  - A DV camera that connects to the computer
  - A digital projector that connects to the computer
  
- ### License
+### License
  
  [GPL3](https://www.gnu.org/licenses/gpl-3.0.html)
