@@ -5,12 +5,10 @@
 while :
 do
 	CPUPERCENT=$(top -b -n1|grep vlc|awk '{print $9}')
-#	echo ${CPUPERCENT}
 	if [ "$CPUPERCENT" = "0" ]
 	then
 		killall vlc
 		echo "`date` Watchdog: vlc macht nichts mehr, wird neu gestartet">>protokoll.log
-#		echo "VLC neugestartet"
 		sleep 30
 	fi
 	sleep 10
