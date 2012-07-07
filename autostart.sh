@@ -1,18 +1,18 @@
 #!/bin/bash
-# Dieses Script startet alle anderen. Normalerweise muss nur dieses Script ausgeführt werden.
+# This script starts all the other ones. Normally, only this script needs to be started
 
 echo "======================================="
 echo "=            BLOCK NOISE!             ="
 echo "======================================="
 echo
-echo "Die Videoinstallation wird jetzt gestartet"
+echo "Starting the video installation"
 echo
-echo "Zum Stoppen:"
-echo "Drücke ESC und klicke dann auf den Stop-Button."
+echo "To stop:"
+echo "Press ESC and then run stopall.sh"
 echo
 sleep 4
 
-echo "`date` Autostart">>protokoll.log
+echo "`date` Auto start">>protokoll.log
 ./resetarchive.sh
 sleep 2
 ./archivefeed.sh &

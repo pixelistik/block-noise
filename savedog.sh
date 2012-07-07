@@ -1,5 +1,5 @@
 #!/bin/bash
-# Alle 5 Minuten mal eines der gespeicherten Videos behalten...
+# Every 5 minutes: keep one of the archive videos for documentation
 mkdir -p ../saveme/keep
 while :
 do

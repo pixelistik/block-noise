@@ -1,14 +1,13 @@
 #!/bin/bash
-# Weil vlc manchmal die Wiedergabe stoppt, aber dann NICHT richtig
-# beendet wird (was dann korrekt zu einem Neustart des Loops führen würde)
-# beenden wir vlc manuell, sobald dessen CPU-Last null wird...
+# Sometimes VLC stops playing but does not terminate ("half-crashed")
+# We just need to kill it manually once its CPU load goes down to 0.
 while :
 do
 	CPUPERCENT=$(top -b -n1|grep vlc|awk '{print $9}')
 	if [ "$CPUPERCENT" = "0" ]
 	then
 		killall vlc
-		echo "`date` Watchdog: vlc macht nichts mehr, wird neu gestartet">>protokoll.log
+		echo "`date` Watchdog: vlc is half-crashed, restarting">>protokoll.log
 		sleep 30
 	fi
 	sleep 10
